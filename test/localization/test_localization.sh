@@ -5,9 +5,10 @@ dir_main="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 array_path_scripts=()
 #array_path_scripts+=("${dir_main}/localization_autoware.sh")
 array_path_scripts+=("${dir_main}/localization_tf.sh")
-array_path_scripts+=("${dir_main}/odom_test.sh")
+#array_path_scripts+=("${dir_main}/odom_test.sh")
 #array_path_scripts+=("${dir_main}/lidar_launch.sh")
-array_path_scripts+=("${dir_main}/applanix_launch.sh")
+#array_path_scripts+=("${dir_main}/applanix_launch.sh")
+#array_path_scripts+=("${dir_main}/pointcloud_container.sh")
 
 function run_in_tab() {
 cmd1="bash -c $1"
