@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
-PID=`ps -eaf | grep new_sm | grep -v grep | awk '{print $2}'`
+PID=`ps -eaf | grep volt_sm | grep -v grep | awk '{print $2}'`
 if [[ "" !=  "$PID" ]]; then
   kill -9 $PID
 fi
