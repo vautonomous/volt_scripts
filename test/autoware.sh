@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sleep 2
+sleep 3
 
 source ~/projects/volt_drivers_ws/install/setup.bash 
 source ~/projects/autoware/install/setup.bash 
