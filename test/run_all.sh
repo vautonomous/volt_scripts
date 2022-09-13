@@ -5,7 +5,6 @@ array_path_scripts+=("/home/volt/projects/volt_scripts/test/perception/pointclou
 array_path_scripts+=("/home/volt/projects/volt_scripts/test/autoware.sh")
 array_path_scripts+=("/home/volt/projects/volt_scripts/test/vcu.sh")
 #array_path_scripts+=("/home/volt/projects/volt_scripts/test/sensors/camera_launch.sh")
-array_path_scripts+=("/home/volt/projects/volt_scripts/test/hmi/run_local_pose_publisher.sh")
 
 function run_in_tab() {
 cmd1="bash -c $1"
