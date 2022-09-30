@@ -1,0 +1,122 @@
+// vim:ts=4:sw=4:et
+{
+  // splitv split container with 2 children
+  "border": "normal",
+  "floating": "auto_off",
+  "layout": "splitv",
+  "percent": 1,
+  "type": "con",
+  "nodes": [
+    {
+      "border": "pixel",
+      "current_border_width": 1,
+      "floating": "auto_off",
+      "geometry": {
+        "height": 480,
+        "width": 640,
+        "x": 0,
+        "y": 0
+      },
+      "name": "Hello World",
+      "percent": 0.065,
+      "swallows": [
+        {
+          "class": "^navbar_i3$",
+          "instance": "^navbar_i3$"
+        }
+      ],
+      "type": "con"
+    },
+    {
+      // tabbed split container with 2 children
+      "border": "normal",
+      "floating": "auto_off",
+      "layout": "tabbed",
+      "percent": 0.923584905660377,
+      "type": "con",
+      "nodes": [
+        {
+          "border": "pixel",
+          "current_border_width": 1,
+          "floating": "auto_off",
+          "geometry": {
+            "height": 1079,
+            "width": 1919,
+            "x": 0,
+            "y": 0
+          },
+          "name": "Mission Control",
+          "percent": 0.433854907539118,
+          "swallows": [
+            {
+              "class": "^Mission_Control$",
+              "instance": "^mission_control$"
+            }
+          ],
+          "type": "con"
+        },
+        {
+          // tabbed split container with 1 children
+          "border": "normal",
+          "floating": "auto_off",
+          "layout": "tabbed",
+          "percent": 0.566145092460882,
+          "type": "con",
+          "nodes": [
+            {
+              // splith split container with 2 children
+              "border": "normal",
+              "floating": "auto_off",
+              "layout": "splith",
+              "percent": 1,
+              "type": "con",
+              "nodes": [
+                {
+                  "border": "pixel",
+                  "current_border_width": 1,
+                  "floating": "auto_off",
+                  "geometry": {
+                    "height": 1080,
+                    "width": 576,
+                    "x": 0,
+                    "y": 0
+                  },
+                  "name": "Mission Observation",
+                  "percent": 0.29375,
+                  "swallows": [
+                    {
+                      "class": "^Mission_Observation$",
+                      "instance": "^mission_observation$"
+                    }
+                  ],
+                  "type": "con"
+                },
+                {
+                  "border": "pixel",
+                  "current_border_width": 1,
+                  "floating": "auto_off",
+                  "geometry": {
+                    "height": 1043,
+                    "width": 1918,
+                    "x": 0,
+                    "y": 36
+                  },
+                  "name": "/home/volt/projects/volt_scripts/config/autoware.rviz* - RViz",
+                  "percent": 0.70625,
+                  "swallows": [
+                    {
+                      "class": "^rviz2$",
+                      "instance": "^rviz_volt$"
+                    }
+                  ],
+                  "type": "con"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

@@ -6,24 +6,17 @@
 # rviz, mission_control, mission_observation, navbar_i3 are tied to ws1 from the i3 config.
 # Then, we sleep and apply the layout to ws1.
 
+DIR_MAIN=~/projects/volt_scripts
 
-dir_main="~/projects/volt_scripts"
+i3-msg 'workspace 1; append_layout /home/volt/projects/volt_scripts/config/workspace-1.json'
 
-# Launch Backend Scripts and Autonomous Driving Screen
+i3-msg workspace 10; exec mate-terminal -- bash -c $DIR_MAIN/startup_multi_launcher.sh &
+
 sleep 3
 
-i3-msg 'workspace 10; exec mate-terminal -- bash -c '$dir_main/startup_multi_launcher.sh' --name startup_multi_launcher &'
+i3-msg workspace 1
 
-sleep 11
-
-i3-msg "workspace 1; append_layout ~/aa.json"
-
-# Launch Detections Screen
-###
-# WM_CLASS(STRING) = "a", "b"
-sleep 1
-
-i3-msg [class="aaa" instance="bbb"] focus
+i3-msg '[class="Mission_Control" instance="mission_control"] focus'
 
 while true;
 do

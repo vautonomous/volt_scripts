@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 
-dir_main="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
-dir_launch_scripts=${dir_main}"/launch_scripts"
-#echo ${dir_launch_scripts}
+DIR_MAIN="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+DIR_LAUNCH_SCRIPTS=${DIR_MAIN}"/launch_scripts"
+#echo ${DIR_LAUNCH_SCRIPTS}
 
 array_path_scripts=()
-array_path_scripts+=("/dir_launch_scripts/run_rosbridge.sh")
-array_path_scripts+=("/dir_launch_scripts/run_ui_process_manager.sh") # can run autoware
-array_path_scripts+=("/dir_launch_scripts/run_navbar_i3.sh") # runs top navbar_i3
-array_path_scripts+=("/dir_launch_scripts/run_rviz.sh")
-array_path_scripts+=("/dir_launch_scripts/run_mission_observation.sh") # runs mission_observation
-array_path_scripts+=("/dir_launch_scripts/run_mission_control.sh") # runs mission_control (goal selection)
+array_path_scripts+=("/$DIR_LAUNCH_SCRIPTS/run_rosbridge.sh")
+array_path_scripts+=("/$DIR_LAUNCH_SCRIPTS/run_ui_process_manager.sh") # can run autoware
+array_path_scripts+=("/$DIR_LAUNCH_SCRIPTS/run_navbar_i3.sh") # runs top navbar_i3
+array_path_scripts+=("/$DIR_LAUNCH_SCRIPTS/run_rviz.sh")
+array_path_scripts+=("/$DIR_LAUNCH_SCRIPTS/run_mission_observation.sh") # runs mission_observation
+array_path_scripts+=("/$DIR_LAUNCH_SCRIPTS/run_mission_control.sh") # runs mission_control (goal selection)
 
 
 function run_in_tab() {
