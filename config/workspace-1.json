@@ -82,7 +82,7 @@
                     "y": 0
                   },
                   "name": "Mission Observation",
-                  "percent": 0.29375,
+                  "percent": 0.31,
                   "swallows": [
                     {
                       "class": "^Mission_Observation$",
@@ -102,7 +102,7 @@
                     "y": 36
                   },
                   "name": "/home/volt/projects/volt_scripts/config/autoware.rviz* - RViz",
-                  "percent": 0.70625,
+                  "percent": 0.69,
                   "swallows": [
                     {
                       "class": "^rviz2$",
