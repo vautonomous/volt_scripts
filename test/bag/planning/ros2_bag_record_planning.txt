@@ -1,0 +1,16 @@
+ros2 bag record -o md_issue_bag_input \
+/tf \
+/localization/kinematic_state \
+/map/vector_map \
+/perception/object_recognition/objects \
+/perception/obstacle_segmentation/pointcloud \
+/perception/occupancy_grid_map/map \
+/perception/object_recognition/detection/traffic_signals \
+/planning/mission_planning/goal \
+/planning/mission_planning/check_point
+
+ros2 bag record -o md_issue_bag_output \
+/planning/scenario_planning/trajectory \
+/planning/scenario_planning/lane_driving/trajectory \
+/planning/scenario_planning/lane_driving/behavior_planning/path_with_lane_id \
+/planning/scenario_planning/lane_driving/behavior_planning/path
