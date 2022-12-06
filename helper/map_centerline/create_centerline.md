@@ -10,7 +10,7 @@ The output map can be used to generate tiles with direction shapes.
 --output='Path of the input map' \
 --origin Latitude Longitude </code>
 
-**Note:** Before using this script, source lanelet2 workspace first. \
+**Note:** Before using this script, source [lanelet2](https://github.com/fzi-forschungszentrum-informatik/Lanelet2) workspace first. \
 **Note:** This script ignore "speed_bump" and "crosswalk" tags in the map.
 
 The output of this script is being used with Maperative to visualize the road direction. The script adds centerline for each lane and gives oneway tag which can be used with prepared .rules file. 
