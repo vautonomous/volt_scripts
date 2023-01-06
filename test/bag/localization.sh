@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source /opt/ros/galactic/setup.bash && 
+source /opt/ros/humble/setup.bash &&
 source ~/projects/autoware/install/setup.bash &&
 cd /home/volt/bags/locatization/ &&
 
