@@ -5,7 +5,7 @@ DIR_LAUNCH_SCRIPTS=${DIR_MAIN}"/launch_scripts"
 #echo ${DIR_LAUNCH_SCRIPTS}
 
 array_path_scripts=()
-array_path_scripts+=("/$DIR_LAUNCH_SCRIPTS/run_rosbridge.sh")
+#array_path_scripts+=("/$DIR_LAUNCH_SCRIPTS/run_rosbridge.sh")
 array_path_scripts+=("/$DIR_LAUNCH_SCRIPTS/run_ui_process_manager.sh") # can run autoware
 array_path_scripts+=("/$DIR_LAUNCH_SCRIPTS/run_navbar_i3.sh") # runs top navbar_i3
 array_path_scripts+=("/$DIR_LAUNCH_SCRIPTS/run_rviz.sh")
