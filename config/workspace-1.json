@@ -101,12 +101,14 @@
                     "x": 0,
                     "y": 36
                   },
-                  "name": "/home/volt/projects/volt_scripts/config/autoware.rviz* - RViz",
+                  "name": "/home/volt/projects/volt_scripts/config/autoware.rviz - RViz",
                   "percent": 0.69,
                   "swallows": [
                     {
-                      "class": "^rviz2$",
-                      "instance": "^rviz_volt$"
+                       "class": "^rviz2$",
+                       "instance": "^rviz_volt$",
+                       "machine": "^volt\\-pc$",
+                       "title": "^\\/home\\/volt\\/projects\\/volt_scripts\\/config\\/autoware\\.rviz\\ \\-\\ RViz$"
                     }
                   ],
                   "type": "con"
