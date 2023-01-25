@@ -82,7 +82,7 @@
                     "y": 0
                   },
                   "name": "Mission Observation",
-                  "percent": 0.15,
+                  "percent": 0.20,
                   "swallows": [
                     {
                       "class": "^Mission_Observation$",
