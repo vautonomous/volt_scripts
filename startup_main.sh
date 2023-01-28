@@ -16,6 +16,8 @@ sleep 3
 
 i3-msg workspace 1
 
+sleep 5
+
 i3-msg '[class="Mission_Control" instance="mission_control"] focus'
 
 while true;
