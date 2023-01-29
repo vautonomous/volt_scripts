@@ -1,0 +1,23 @@
+<launch>
+    <arg name="respawn_rosbridge" default="true"/>
+    <arg name="topics_glob" default="/parameter_events,
+    /rosout, /clients_connected, /client_count, /hmi/goal_gnss_coordinate,/hmi/checkpoint_gnss_coordinate,
+     /ui/ui_process_command, /ui/ui_process_diagnostic, /api/autoware/get/engage, /api/autoware/get/emergency, /api/external/get/calibration_status,
+     /api/external/get/diagnostics,  /api/external/get/map/info/hash, /api/external/get/rosbag_logging_mode, /api/iv_msgs/autoware/state,
+     /api/iv_msgs/vehicle/status/control_mode, /awapi/vehicle/put/velocity, /awapi/autoware/get/status,
+     /awapi/vehicle/get/status,  /awapi/tmp/infrastructure_commands, /foa/operation/log,   /localization/pose_estimator/nearest_voxel_transformation_likelihood,
+     /autoware/state, /localization/pose_estimator/transform_probability, /system/emergency/hazard_status,
+     /planning/scenario_planning/max_velocity_default, /diagnostics, /webauto/vehicle_info" />
+    <arg name="services_glob" default="/rosbridge_websocket/describe_parameters, /rosbridge_websocket/get_parameter_types,
+    /rosbridge_websocket/get_parameters, /rosbridge_websocket/list_parameters, /rosbridge_websocket/set_parameters,
+    /rosbridge_websocket/set_parameters_atomically, /webauto/shutdown, /webauto/update_vehicle_maps, /webauto/update_vehicle_software,
+    /api/autoware/set/engage, /api/external/set/clear_route, /api/external/set/emergency,  /api/external/set/engage, /api/external/set/route"/>
+
+    <group>
+        <include file="$(find-pkg-share rosbridge_server)/launch/rosbridge_websocket_launch.xml">
+            <arg name="respawn" value="$(var respawn_rosbridge)"/>
+            <arg name="topics_glob" value="$(var topics_glob)"/>
+            <arg name="services_glob" value="$(var services_glob)"/>-->
+        </include>
+    </group>
+</launch>
