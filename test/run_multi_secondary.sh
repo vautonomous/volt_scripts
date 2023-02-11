@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 array_path_scripts=()
-array_path_scripts+=("/home/volt/projects/volt_scripts/test/perception/pointcloud_container.sh")
-array_path_scripts+=("/home/volt/projects/volt_scripts/test/autoware.sh")
-array_path_scripts+=("/home/volt/projects/volt_scripts/test/vcu.sh")
+array_path_scripts+=("$HOME/projects/volt_scripts/test/perception/pointcloud_container.sh")
+array_path_scripts+=("$HOME/projects/volt_scripts/test/autoware_multi_secondary.sh")
+#array_path_scripts+=("/home/volt/projects/volt_scripts/test/vcu.sh")
 
 function run_in_tab() {
 cmd1="bash -c $1"
